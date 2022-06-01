@@ -3,13 +3,7 @@
     "@babel/plugin-transform-runtime",
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-react-jsx",
-    [
-      "emotion",
-      {
-        "autoLabel": true,
-        "labelFormat": "[dirname]-[filename]--[local]"
-      }
-    ]
+    "@emotion"
   ],
   "presets": [
     ["@babel/env", { "shippedProposals": true }],
