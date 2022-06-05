@@ -761,7 +761,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-jsx@npm:^7.12.13, @babel/plugin-syntax-jsx@npm:^7.17.12":
+"@babel/plugin-syntax-jsx@npm:^7.12.13, @babel/plugin-syntax-jsx@npm:^7.17.12, @babel/plugin-syntax-jsx@npm:^7.2.0":
   version: 7.17.12
   resolution: "@babel/plugin-syntax-jsx@npm:7.17.12"
   dependencies:
@@ -1183,7 +1183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx@npm:^7.12.12, @babel/plugin-transform-react-jsx@npm:^7.16.7, @babel/plugin-transform-react-jsx@npm:^7.17.12":
+"@babel/plugin-transform-react-jsx@npm:^7.12.1, @babel/plugin-transform-react-jsx@npm:^7.12.12, @babel/plugin-transform-react-jsx@npm:^7.16.7, @babel/plugin-transform-react-jsx@npm:^7.17.12":
   version: 7.17.12
   resolution: "@babel/plugin-transform-react-jsx@npm:7.17.12"
   dependencies:
@@ -1597,6 +1597,77 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@common/components@workspace:*, @common/components@workspace:packages/common-components":
+  version: 0.0.0-use.local
+  resolution: "@common/components@workspace:packages/common-components"
+  dependencies:
+    "@babel/core": ^7.18.2
+    "@babel/plugin-proposal-class-properties": ^7.17.12
+    "@babel/plugin-transform-react-jsx": ^7.17.12
+    "@babel/plugin-transform-runtime": ^7.18.2
+    "@babel/preset-env": ^7.18.2
+    "@babel/preset-react": ^7.17.12
+    "@babel/preset-typescript": ^7.17.12
+    "@babel/runtime": ^7.18.3
+    "@common/styles": "workspace:*"
+    "@emotion/babel-plugin": ^11.9.2
+    "@emotion/babel-preset-css-prop": ^11.2.0
+    "@emotion/css": ^11.9.0
+    "@emotion/react": ^11.9.0
+    "@emotion/styled": ^11.8.1
+    "@mdx-js/react": ^1.6.22
+    "@storybook/addon-actions": ^6.5.6
+    "@storybook/addon-docs": ^6.5.6
+    "@storybook/addon-essentials": ^6.5.6
+    "@storybook/addon-interactions": ^6.5.6
+    "@storybook/addon-links": ^6.5.6
+    "@storybook/builder-webpack5": ^6.5.6
+    "@storybook/manager-webpack5": ^6.5.6
+    "@storybook/react": ^6.5.6
+    "@storybook/testing-library": ^0.0.11
+    "@types/react": ^18.0.9
+    "@types/react-dom": ^18.0.5
+    babel-loader: ^8.2.5
+    babel-plugin-module-resolver: ^4.1.0
+    babel-plugin-react-require: ^3.1.3
+    css-loader: ^6.7.1
+    html-webpack-plugin: ^5.5.0
+    react: ^18.1.0
+    react-dom: ^18.1.0
+    react-router-dom: ^6.3.0
+    style-loader: ^3.3.1
+    typescript-styled-plugin: ^0.18.2
+    util: ^0.12.4
+    webpack: ^5.72.1
+    webpack-cli: ^4.9.2
+    webpack-dev-server: ^4.9.0
+  languageName: unknown
+  linkType: soft
+
+"@common/styles@workspace:*, @common/styles@workspace:packages/common-styles":
+  version: 0.0.0-use.local
+  resolution: "@common/styles@workspace:packages/common-styles"
+  dependencies:
+    "@babel/core": ^7.18.2
+    "@babel/plugin-proposal-class-properties": ^7.17.12
+    "@babel/plugin-proposal-object-rest-spread": ^7.18.0
+    "@babel/plugin-transform-runtime": ^7.18.2
+    "@babel/preset-env": ^7.18.2
+    "@babel/preset-react": ^7.17.12
+    "@babel/preset-typescript": ^7.17.12
+    "@babel/runtime": ^7.18.3
+    "@common/components": "workspace:*"
+    "@emotion/react": ^11.9.0
+    "@types/react": ^18.0.11
+    "@types/react-dom": ^18.0.5
+    babel-loader: ^8.2.5
+    react: ^18.1.0
+    react-dom: ^18.1.0
+    typescript: ^4.7.3
+    typescript-styled-plugin: ^0.18.2
+  languageName: unknown
+  linkType: soft
+
 "@design-systems/utils@npm:2.12.0":
   version: 2.12.0
   resolution: "@design-systems/utils@npm:2.12.0"
@@ -1670,7 +1741,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.7.1, @emotion/babel-plugin@npm:^11.9.2":
+"@emmetio/abbreviation@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@emmetio/abbreviation@npm:2.2.3"
+  dependencies:
+    "@emmetio/scanner": ^1.0.0
+  checksum: 8637ff0c2afeb7a4498bf628510a8332f3ec70474a445131125d8049dfa1b917c18210829c12e1c9044fec5d13cfb9bb498b0af670e8d4905e6dd88e215bd135
+  languageName: node
+  linkType: hard
+
+"@emmetio/css-abbreviation@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@emmetio/css-abbreviation@npm:2.1.4"
+  dependencies:
+    "@emmetio/scanner": ^1.0.0
+  checksum: ede72dafc412180ced63046c648bee6e8b7a5511622ed3192f7f11d813e119fd5e71cd60b95ed6a07d2c9809d6567d8c6fb6c36a4e8dbbcca9bd19df92192eba
+  languageName: node
+  linkType: hard
+
+"@emmetio/scanner@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@emmetio/scanner@npm:1.0.0"
+  checksum: 4e4366bf0b56de0a53de361a125dd88b9f652ffea2961a4035fe6acc46670ef483ce86a5e5b66124562a27322099170c3cbfed524b2d07ad048a84e304ab70bd
+  languageName: node
+  linkType: hard
+
+"@emotion/babel-plugin-jsx-pragmatic@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@emotion/babel-plugin-jsx-pragmatic@npm:0.1.5"
+  dependencies:
+    "@babel/plugin-syntax-jsx": ^7.2.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: b92aafafd35eca0cf9690a4b21899827ef24e0ce7bfe97381ef3258113deaa21eb047b492f4eadfac5ba57b301c0bdcab934d776774d91e867f1a8bdb7ab9870
+  languageName: node
+  linkType: hard
+
+"@emotion/babel-plugin@npm:^11.2.0, @emotion/babel-plugin@npm:^11.7.1, @emotion/babel-plugin@npm:^11.9.2":
   version: 11.9.2
   resolution: "@emotion/babel-plugin@npm:11.9.2"
   dependencies:
@@ -1689,6 +1796,20 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0
   checksum: 2d2c4fadd389862896bcbc5f42c9b9c1a199810173fcf14e5520506c7179c2ddb991b8832fd273f42104cf0dae98886ad8e767b5e38ad235b652d903c3b8a328
+  languageName: node
+  linkType: hard
+
+"@emotion/babel-preset-css-prop@npm:^11.2.0":
+  version: 11.2.0
+  resolution: "@emotion/babel-preset-css-prop@npm:11.2.0"
+  dependencies:
+    "@babel/plugin-transform-react-jsx": ^7.12.1
+    "@babel/runtime": ^7.7.2
+    "@emotion/babel-plugin": ^11.2.0
+    "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 211fb98cb5fb958ddaaeeb326595c4681f0d6a8ac626dec4499cbd1771909f9c6d9af174e6288ef444ad256c0cd96238ab1575a460aeb9be93277b521f891eb3
   languageName: node
   linkType: hard
 
@@ -3811,6 +3932,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react@npm:^18.0.11":
+  version: 18.0.11
+  resolution: "@types/react@npm:18.0.11"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: a2138d6929c36a398b0b43eb815b4e67c4f15aeebbdf8b1959edac56b8662d7409020a00540369b4eb1054579b1e8c9549447ae9b0335d5d1ec4ed4e1be2d628
+  languageName: node
+  linkType: hard
+
 "@types/retry@npm:0.12.0":
   version: 0.12.0
   resolution: "@types/retry@npm:0.12.0"
@@ -5123,6 +5255,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-module-resolver@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "babel-plugin-module-resolver@npm:4.1.0"
+  dependencies:
+    find-babel-config: ^1.2.0
+    glob: ^7.1.6
+    pkg-up: ^3.1.0
+    reselect: ^4.0.0
+    resolve: ^1.13.1
+  checksum: 3907fba21ca3c66a081e01fbd16bb09c84781749db16aa57805becc376bb5ee8dc373d4b209613e1453d30ea6c836d13073e9e7b6d239ff1806dd1763a9ab18f
+  languageName: node
+  linkType: hard
+
 "babel-plugin-named-exports-order@npm:^0.0.2":
   version: 0.0.2
   resolution: "babel-plugin-named-exports-order@npm:0.0.2"
@@ -5186,6 +5331,13 @@ __metadata:
     lodash: ^4.17.15
     react-docgen: ^5.0.0
   checksum: 6126d358ac2cb27a9a7f145ab586b7a28cb19ef09ca37c4f08a853246a101328ffe6c87813e95b1b4ba05beb627285199f7d0ba16abfb61b35cc4febb6d5eabd
+  languageName: node
+  linkType: hard
+
+"babel-plugin-react-require@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "babel-plugin-react-require@npm:3.1.3"
+  checksum: fcc36fa88b3f78e7fc90e3a49536a95f2af12528c997ef994e006ccc2b8311c2a96155cb9e946191d3a1d48ccdde47442bf9956dd00c1db571f8a97301c4450f
   languageName: node
   linkType: hard
 
@@ -6127,48 +6279,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"common-components@workspace:packages/common-components":
-  version: 0.0.0-use.local
-  resolution: "common-components@workspace:packages/common-components"
-  dependencies:
-    "@babel/core": ^7.18.2
-    "@babel/plugin-proposal-class-properties": ^7.17.12
-    "@babel/plugin-transform-react-jsx": ^7.17.12
-    "@babel/plugin-transform-runtime": ^7.18.2
-    "@babel/preset-env": ^7.18.2
-    "@babel/preset-react": ^7.17.12
-    "@babel/preset-typescript": ^7.17.12
-    "@babel/runtime": ^7.18.3
-    "@emotion/babel-plugin": ^11.9.2
-    "@emotion/css": ^11.9.0
-    "@emotion/react": ^11.9.0
-    "@emotion/styled": ^11.8.1
-    "@mdx-js/react": ^1.6.22
-    "@storybook/addon-actions": ^6.5.6
-    "@storybook/addon-docs": ^6.5.6
-    "@storybook/addon-essentials": ^6.5.6
-    "@storybook/addon-interactions": ^6.5.6
-    "@storybook/addon-links": ^6.5.6
-    "@storybook/builder-webpack5": ^6.5.6
-    "@storybook/manager-webpack5": ^6.5.6
-    "@storybook/react": ^6.5.6
-    "@storybook/testing-library": ^0.0.11
-    "@types/react": ^18.0.9
-    "@types/react-dom": ^18.0.5
-    babel-loader: ^8.2.5
-    css-loader: ^6.7.1
-    html-webpack-plugin: ^5.5.0
-    react: ^18.1.0
-    react-dom: ^18.1.0
-    react-router-dom: ^6.3.0
-    style-loader: ^3.3.1
-    util: ^0.12.4
-    webpack: ^5.72.1
-    webpack-cli: ^4.9.2
-    webpack-dev-server: ^4.9.0
-  languageName: unknown
-  linkType: soft
-
 "common-path-prefix@npm:^3.0.0":
   version: 3.0.0
   resolution: "common-path-prefix@npm:3.0.0"
@@ -7022,6 +7132,16 @@ __metadata:
     minimalistic-assert: ^1.0.1
     minimalistic-crypto-utils: ^1.0.1
   checksum: d56d21fd04e97869f7ffcc92e18903b9f67f2d4637a23c860492fbbff5a3155fd9ca0184ce0c865dd6eb2487d234ce9551335c021c376cd2d3b7cb749c7d10f4
+  languageName: node
+  linkType: hard
+
+"emmet@npm:^2.3.0":
+  version: 2.3.6
+  resolution: "emmet@npm:2.3.6"
+  dependencies:
+    "@emmetio/abbreviation": ^2.2.3
+    "@emmetio/css-abbreviation": ^2.1.4
+  checksum: 96d56212d76023b7ecd4fd3b269a6b85b5a38d95d3135557d6321e38955e9c322d75b135435678d7697ed3d56741494ebf3f3974b74f2b89292b65565447ba4b
   languageName: node
   linkType: hard
 
@@ -7946,6 +8066,16 @@ __metadata:
     statuses: 2.0.1
     unpipe: ~1.0.0
   checksum: 92effbfd32e22a7dff2994acedbd9bcc3aa646a3e919ea6a53238090e87097f8ef07cced90aa2cc421abdf993aefbdd5b00104d55c7c5479a8d00ed105b45716
+  languageName: node
+  linkType: hard
+
+"find-babel-config@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "find-babel-config@npm:1.2.0"
+  dependencies:
+    json5: ^0.5.1
+    path-exists: ^3.0.0
+  checksum: 0a1785d3da9f38637885d9d65f183aaa072f51a834f733035e9694e4d0f6983ae8c8e75cd4e08b92af6f595b3b490ee813a1c5a9b14740685aa836fa1e878583
   languageName: node
   linkType: hard
 
@@ -10140,6 +10270,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "json5@npm:0.5.1"
+  bin:
+    json5: lib/cli.js
+  checksum: 9b85bf06955b23eaa4b7328aa8892e3887e81ca731dd27af04a5f5f1458fbc5e1de57a24442e3272f8a888dd1abe1cb68eb693324035f6b3aeba4fcab7667d62
+  languageName: node
+  linkType: hard
+
 "json5@npm:^1.0.1":
   version: 1.0.1
   resolution: "json5@npm:1.0.1"
@@ -10157,6 +10296,13 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: 74b8a23b102a6f2bf2d224797ae553a75488b5adbaee9c9b6e5ab8b510a2fc6e38f876d4c77dea672d4014a44b2399e15f2051ac2b37b87f74c0c7602003543b
+  languageName: node
+  linkType: hard
+
+"jsonc-parser@npm:^2.3.0":
+  version: 2.3.1
+  resolution: "jsonc-parser@npm:2.3.1"
+  checksum: de37640bd1d0dcc5b2e19f2514b3c2e05832ec6fdb86da65102509524d3eef0f2cc49bd471a0b28b8af2f8069bbca8396a9bd5cad4ae04001e1893e47df265eb
   languageName: node
   linkType: hard
 
@@ -12018,13 +12164,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pkg-up@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "pkg-up@npm:3.1.0"
+  dependencies:
+    find-up: ^3.0.0
+  checksum: 5bac346b7c7c903613c057ae3ab722f320716199d753f4a7d053d38f2b5955460f3e6ab73b4762c62fd3e947f58e04f1343e92089e7bb6091c90877406fcd8c8
+  languageName: node
+  linkType: hard
+
 "playground@workspace:.":
   version: 0.0.0-use.local
   resolution: "playground@workspace:."
   dependencies:
     "@babel/core": ^7.15.8
     "@babel/runtime": ^7.18.3
+    "@emotion/babel-plugin": ^11.9.2
     "@emotion/eslint-plugin": ^11.7.0
+    "@emotion/react": ^11.9.0
     "@storybook/react": ^6.5.6
     "@types/jest": ^27.5.1
     "@types/node": ^17.0.35
@@ -13105,6 +13262,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"reselect@npm:^4.0.0":
+  version: 4.1.5
+  resolution: "reselect@npm:4.1.5"
+  checksum: 54c13c1e795b2ea70cba8384138aebe78adda00cbea303cc94b64da0a70d74c896cc9a03115ae38b8bff990e7a60dcd6452ab68cbec01b0b38c1afda70714cf0
+  languageName: node
+  linkType: hard
+
 "resolve-cwd@npm:^3.0.0":
   version: 3.0.0
   resolution: "resolve-cwd@npm:3.0.0"
@@ -13135,7 +13299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.10.0, resolve@npm:^1.12.0, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.3.2, resolve@npm:^1.9.0":
+"resolve@npm:^1.10.0, resolve@npm:^1.12.0, resolve@npm:^1.13.1, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.3.2, resolve@npm:^1.9.0":
   version: 1.22.0
   resolution: "resolve@npm:1.22.0"
   dependencies:
@@ -13158,7 +13322,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.22.0
   resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
   dependencies:
@@ -14673,6 +14837,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript-styled-plugin@npm:^0.18.2":
+  version: 0.18.2
+  resolution: "typescript-styled-plugin@npm:0.18.2"
+  dependencies:
+    typescript-template-language-service-decorator: ^2.2.0
+    vscode-css-languageservice: ^5.1.4
+    vscode-emmet-helper: ^2.6.4
+    vscode-languageserver-textdocument: ^1.0.1
+    vscode-languageserver-types: ^3.16.0
+  checksum: a410974ba8c604ae1826962b602f9ed0e7e2f134227e7418a9495c798886859664ed20cd1774978ab017645936d896143091a30980c7b09f06650ca97b344ffe
+  languageName: node
+  linkType: hard
+
+"typescript-template-language-service-decorator@npm:^2.2.0":
+  version: 2.3.1
+  resolution: "typescript-template-language-service-decorator@npm:2.3.1"
+  checksum: 059214299099ecfe1b0372e22430fe262959c700cf65270ce74bbff04f2dc497fe986ade409c53db907805d70fedfbd1989c410f94697bf981082135a2cc6f20
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^4.7.2":
   version: 4.7.2
   resolution: "typescript@npm:4.7.2"
@@ -14683,6 +14867,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^4.7.3":
+  version: 4.7.3
+  resolution: "typescript@npm:4.7.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: fd13a1ce53790a36bb8350e1f5e5e384b5f6cb9b0635114a6d01d49cb99916abdcfbc13c7521cdae2f2d3f6d8bc4a8ae7625edf645a04ee940588cd5e7597b2f
+  languageName: node
+  linkType: hard
+
 "typescript@patch:typescript@^4.7.2#~builtin<compat/typescript>":
   version: 4.7.2
   resolution: "typescript@patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=7ad353"
@@ -14690,6 +14884,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 7e2b9a9f4a70fb7616f1b0d986977f8e34a74f046202fa7f24fdee79589598277810fa216b3776c20c0683a9235872c73be34fdb93f67f98c1efaca40999422f
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.7.3#~builtin<compat/typescript>":
+  version: 4.7.3
+  resolution: "typescript@patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 137d18a77f52254a284960b16ab53d0619f57b69b5d585804b8413f798a1175ce3e774fb95e6a101868577aafe357d8fcfc9171f0dc9fc0c210e9ae59d107cc0
   languageName: node
   linkType: hard
 
@@ -15128,6 +15332,67 @@ __metadata:
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
   checksum: 10a1c50aab54ff8b4c9042c15fc64aefccce8d2fb90c0640403242db0ee7fb269f9b102bdb69cfb435d7ef3180d61fd4fb004a043a12709abaf9056cfd7e039d
+  languageName: node
+  linkType: hard
+
+"vscode-css-languageservice@npm:^5.1.4":
+  version: 5.4.2
+  resolution: "vscode-css-languageservice@npm:5.4.2"
+  dependencies:
+    vscode-languageserver-textdocument: ^1.0.4
+    vscode-languageserver-types: ^3.16.0
+    vscode-nls: ^5.0.0
+    vscode-uri: ^3.0.3
+  checksum: faa35690c1f06a469ef335eba85158df453c54e2cacd37788c5e1f29458183753b95b564952acecb3fab31fee3d061a8e70234f2dc49e82244cdc519280fcc1b
+  languageName: node
+  linkType: hard
+
+"vscode-emmet-helper@npm:^2.6.4":
+  version: 2.6.4
+  resolution: "vscode-emmet-helper@npm:2.6.4"
+  dependencies:
+    emmet: ^2.3.0
+    jsonc-parser: ^2.3.0
+    vscode-languageserver-textdocument: ^1.0.1
+    vscode-languageserver-types: ^3.15.1
+    vscode-nls: ^5.0.0
+    vscode-uri: ^2.1.2
+  checksum: ccee14eadae599fa619f714865ef47b6fbabfe684eabeee00311ac078bbf340cd07c0481af4028e2565412be2fb272dbabd268174a8c835243f699cdd6b5c09e
+  languageName: node
+  linkType: hard
+
+"vscode-languageserver-textdocument@npm:^1.0.1, vscode-languageserver-textdocument@npm:^1.0.4":
+  version: 1.0.5
+  resolution: "vscode-languageserver-textdocument@npm:1.0.5"
+  checksum: 758ca33c8e332de0af53935f6863fba60b8f06812d821d03f16cffbbb0a67ffab7f5a1f4fb02f57832a1232236ac703602a6a9d8de9b5e690d8cb7ee0c2dfa6a
+  languageName: node
+  linkType: hard
+
+"vscode-languageserver-types@npm:^3.15.1, vscode-languageserver-types@npm:^3.16.0":
+  version: 3.17.1
+  resolution: "vscode-languageserver-types@npm:3.17.1"
+  checksum: ceb4145dfd840e026a51a6059af6ca2ced606763d945ab24851b1871bf8614f12e7f6fdb1f865ba6ea26f62db066ef188b183b1c830e0f38f28e08b584136464
+  languageName: node
+  linkType: hard
+
+"vscode-nls@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "vscode-nls@npm:5.0.1"
+  checksum: a9dc0cf1fcf5a0ca6e450ae86cc8501d0073b737b26ad9eaaa71210803cdba11fb9644313b389842444db95d3c40caa134eaa7ad7b4f53c93adef633a6ad6e4a
+  languageName: node
+  linkType: hard
+
+"vscode-uri@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "vscode-uri@npm:2.1.2"
+  checksum: 58c2d21018b86825b5a7f65f8879f837828a367bbf31d07ed59268fb2b56c9621a6996547d5e8f966d6ac05f0f921a7005f4541927007f788c2e4c6e5d6735e0
+  languageName: node
+  linkType: hard
+
+"vscode-uri@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "vscode-uri@npm:3.0.3"
+  checksum: 683bf9de835c3cef0b51c104a4949bf746148ded7c2287ebafcc506d20aa0e90b99385a972dba8132903420dba67fc33a5e146e30212c4a6b3ca5d74d1f95702
   languageName: node
   linkType: hard
 
