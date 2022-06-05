@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -8,6 +8,16 @@ module.exports = {
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5'
+  },
+  typescript: {
+    check: true
+  },
+  features: {
+    babelModeV7: true
+  },
+  babel: (config) => {
+    config.presets.push(require.resolve('@emotion/babel-preset-css-prop'))
+    return config
   },
   webpackFinal: async (config) => {
     config.module.rules.push({

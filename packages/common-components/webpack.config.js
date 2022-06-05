@@ -18,6 +18,9 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    react: 'React'
+  },
   output: {
     filename: 'components.bundle.min.js',
     library: 'playgroundComponents',

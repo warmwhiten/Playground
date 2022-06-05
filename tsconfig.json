@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "resolveJsonModule": true,
@@ -15,18 +13,21 @@
     "module": "esnext",
     "isolatedModules": true
   },
-  /*
-    "references": [
-      {
-        "path": "packages/common-components"
-      },
-      {
-        "path": "packages/common-styles"
-      },
+
+  "references": [
+    {
+      "path": "packages/common-components"
+    },
+    {
+      "path": "packages/common-styles"
+    }
+
+    /*
       {
         "path": "packages/common-utils"
       },
-    ],
-    */
+      */
+  ],
+
   "exclude": ["packages/**/dist/**"]
 }
