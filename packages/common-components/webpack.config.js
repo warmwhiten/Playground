@@ -18,9 +18,12 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    react: 'React'
+  },
   output: {
     filename: 'components.bundle.min.js',
-    library: 'fstrComponents',
+    library: 'playgroundComponents',
     libraryTarget: 'umd',
     clean: true
   }
